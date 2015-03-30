@@ -1,7 +1,11 @@
-from django.shortcuts import render
+from django.shortcuts import render_to_response
 from django.http import HttpResponse
+from authomatic import Authomatic
+from authomatic.adapters import DjangoAdapter
 
-# Create your views here.
+from config import CONFIG
+
+authomatic = Authomatic(CONFIG, 'Una super cadena de texto')
 
 def holaMundo(request):
-	return HttpResponse("Hola mundo :)")
+	return render_to_response('home.html', { 'title': 'TituloApp' })

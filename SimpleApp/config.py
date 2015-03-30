@@ -1,4 +1,4 @@
-from authomatic.providers import oauth2, oauth1, openid, gaeopenid
+from authomatic.providers import oauth2, oauth1
 
 CONFIG = {
 	'tw': {
@@ -9,12 +9,8 @@ CONFIG = {
 
 	'fb': {
 		'class': oauth2.Facebook,
-		'consumer_key': '1412717765703591'
+		'consumer_key': '1412717765703591',
 		'consumer_secret': 'fd4896a5a1d86486de69dee2a3636009',
 		'scope': ['user_about_me', 'email', 'publish_stream'],
 	},
-
-	'oi': {
-		'class_': openid.OpenID,
-    }
 }
