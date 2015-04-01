@@ -3,8 +3,8 @@ from authomatic.providers import oauth2, oauth1
 CONFIG = {
 	'twitter': {
 		'class_': oauth1.Twitter,
-		'consumer_key': 'dtQ2TFHwuRGM2xsvMpECcyOPh',
-		'consumer_secret': 'R8gNLwCnj6jL7CEoIzKls3uEU9rTAzgcH7SpkOBHyEb0ScWqgn',
+		'consumer_key': '5ROubSCwMYsCLjHd4rzlYpMjt',
+		'consumer_secret': '9pyccKoHxHFG2eeVU8cFVfctYHzFqGTdvMVFQfhVVGgEFnRY52',
 	},
 
 	'facebook': {
